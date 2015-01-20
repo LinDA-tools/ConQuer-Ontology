@@ -62,6 +62,15 @@ cqo:executionTime
 	owl:minCardinality "1"^^xsd:nonNegativeInteger ;
 	rdfs:domain	cqo:Transformation ;
 	rdfs:range 	xsd:dateTime .
+	
+cqo:hasQueryString
+	a 	rdf:Property, owl:ObjectProperty ;
+	rdfs:label 	“has query string”^^xsd:string ;
+	rdfs:comment	“This property indicates the SPARQL query in String format.” ;
+	owl:maxCardinality "1"^^xsd:nonNegativeInteger ;
+	owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+	rdfs:domain	cqo:Query ;
+	rdfs:range 	xsd:string .
 
 cqo:hasQuery
 	a 	rdf:Property, owl:ObjectProperty ;
